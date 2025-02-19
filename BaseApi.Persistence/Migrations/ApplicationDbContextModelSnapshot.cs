@@ -167,8 +167,8 @@ namespace BaseApi.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("0e6e3e27-9dc5-4757-9dfa-4e95dd8b2a37"),
-                            CreatedOnUtc = new DateTime(2024, 10, 24, 14, 25, 58, 850, DateTimeKind.Utc).AddTicks(3432)
+                            Id = new Guid("dec94c3d-3b61-4afe-833d-580363e9ef4e"),
+                            CreatedOnUtc = new DateTime(2025, 2, 19, 14, 16, 18, 750, DateTimeKind.Utc).AddTicks(6256)
                         });
                 });
 
@@ -189,7 +189,7 @@ namespace BaseApi.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            RoleId = new Guid("0e6e3e27-9dc5-4757-9dfa-4e95dd8b2a37"),
+                            RoleId = new Guid("dec94c3d-3b61-4afe-833d-580363e9ef4e"),
                             PermissionId = 1
                         });
                 });
@@ -356,11 +356,11 @@ namespace BaseApi.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("385b8860-9940-4ac6-88d7-7e989f15a66a"),
-                            CreatedOnUtc = new DateTime(2024, 10, 24, 14, 25, 58, 851, DateTimeKind.Utc).AddTicks(7271),
+                            Id = new Guid("da9d8015-900c-4bc8-b90d-3d2cacfbd7eb"),
+                            CreatedOnUtc = new DateTime(2025, 2, 19, 14, 16, 18, 751, DateTimeKind.Utc).AddTicks(4753),
                             EmailVerified = true,
                             PhoneNumberVerified = true,
-                            _passwordHash = "1EBB46B80291C4D92A0C688EA9A3A04AB5F0D4910A2D4BEEE6FE3A8006F7D275-9D60FDD94F5DEE8FD745EB6F4D1BE4A3"
+                            _passwordHash = "200108BEE04A3873F3A88746A5FFE6AA9EB2F5FE9AF8EE269D1AF1769A31F2D9-80F930760054FC969398F50FC94B2618"
                         });
                 });
 
@@ -381,8 +381,8 @@ namespace BaseApi.Persistence.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("385b8860-9940-4ac6-88d7-7e989f15a66a"),
-                            RoleId = new Guid("0e6e3e27-9dc5-4757-9dfa-4e95dd8b2a37")
+                            UserId = new Guid("da9d8015-900c-4bc8-b90d-3d2cacfbd7eb"),
+                            RoleId = new Guid("dec94c3d-3b61-4afe-833d-580363e9ef4e")
                         });
                 });
 
@@ -542,7 +542,7 @@ namespace BaseApi.Persistence.Migrations
                             b1.HasData(
                                 new
                                 {
-                                    RoleId = new Guid("0e6e3e27-9dc5-4757-9dfa-4e95dd8b2a37"),
+                                    RoleId = new Guid("dec94c3d-3b61-4afe-833d-580363e9ef4e"),
                                     Value = "Administrator"
                                 });
                         });
@@ -678,7 +678,7 @@ namespace BaseApi.Persistence.Migrations
                             b1.HasData(
                                 new
                                 {
-                                    UserId = new Guid("385b8860-9940-4ac6-88d7-7e989f15a66a"),
+                                    UserId = new Guid("da9d8015-900c-4bc8-b90d-3d2cacfbd7eb"),
                                     Value = "admin@baseapi.com"
                                 });
                         });
@@ -704,7 +704,7 @@ namespace BaseApi.Persistence.Migrations
                             b1.HasData(
                                 new
                                 {
-                                    UserId = new Guid("385b8860-9940-4ac6-88d7-7e989f15a66a"),
+                                    UserId = new Guid("da9d8015-900c-4bc8-b90d-3d2cacfbd7eb"),
                                     Value = "Admin"
                                 });
                         });
@@ -730,7 +730,7 @@ namespace BaseApi.Persistence.Migrations
                             b1.HasData(
                                 new
                                 {
-                                    UserId = new Guid("385b8860-9940-4ac6-88d7-7e989f15a66a"),
+                                    UserId = new Guid("da9d8015-900c-4bc8-b90d-3d2cacfbd7eb"),
                                     Value = "User"
                                 });
                         });
@@ -759,7 +759,7 @@ namespace BaseApi.Persistence.Migrations
                             b1.HasData(
                                 new
                                 {
-                                    UserId = new Guid("385b8860-9940-4ac6-88d7-7e989f15a66a"),
+                                    UserId = new Guid("da9d8015-900c-4bc8-b90d-3d2cacfbd7eb"),
                                     Value = "+1000000000"
                                 });
                         });

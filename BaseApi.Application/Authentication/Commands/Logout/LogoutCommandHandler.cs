@@ -10,7 +10,7 @@ internal sealed class LogoutCommandHandler(
 {
     public async Task<Result> Handle(LogoutCommand request, CancellationToken cancellationToken)
     {
-        await tokenLifetimeManager.Logout(userTokenProvider.BearerToken);
+        await tokenLifetimeManager.LogoutAsync(userTokenProvider.BearerToken);
 
         return Result.Success();
     }

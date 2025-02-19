@@ -31,7 +31,7 @@ public class JwtTokenLifetimeManager(
         return false;
     }
     
-    public async Task Logout(string bearerToken)
+    public async Task LogoutAsync(string bearerToken)
     {
         JsonWebToken securityToken = new(bearerToken);
 

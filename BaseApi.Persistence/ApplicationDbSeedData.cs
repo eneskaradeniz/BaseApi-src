@@ -47,7 +47,7 @@ public class ApplicationDbSeedData(IPasswordHasher passwordHasher, IDateTime dat
                 EmailVerified = true,
                 PhoneNumberVerified = true,
                 _passwordHash = passwordHash,
-                CreatedOnUtc = DateTime.UtcNow
+                CreatedOnUtc = dateTime.UtcNow
             });
 
             u.OwnsOne(user => user.FirstName)

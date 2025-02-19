@@ -245,22 +245,22 @@ namespace BaseApi.Persistence.Migrations
             migrationBuilder.InsertData(
                 table: "Roles",
                 columns: new[] { "Id", "CreatedOnUtc", "ModifiedOnUtc", "Name" },
-                values: new object[] { new Guid("0e6e3e27-9dc5-4757-9dfa-4e95dd8b2a37"), new DateTime(2024, 10, 24, 14, 25, 58, 850, DateTimeKind.Utc).AddTicks(3432), null, "Administrator" });
+                values: new object[] { new Guid("dec94c3d-3b61-4afe-833d-580363e9ef4e"), new DateTime(2025, 2, 19, 14, 16, 18, 750, DateTimeKind.Utc).AddTicks(6256), null, "Administrator" });
 
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "Id", "Email", "FirstName", "LastName", "PhoneNumber", "CreatedOnUtc", "DeletedOnUtc", "EmailVerified", "ModifiedOnUtc", "PhoneNumberVerified", "PasswordHash" },
-                values: new object[] { new Guid("385b8860-9940-4ac6-88d7-7e989f15a66a"), "admin@baseapi.com", "Admin", "User", "+1000000000", new DateTime(2024, 10, 24, 14, 25, 58, 851, DateTimeKind.Utc).AddTicks(7271), null, true, null, true, "1EBB46B80291C4D92A0C688EA9A3A04AB5F0D4910A2D4BEEE6FE3A8006F7D275-9D60FDD94F5DEE8FD745EB6F4D1BE4A3" });
+                values: new object[] { new Guid("da9d8015-900c-4bc8-b90d-3d2cacfbd7eb"), "admin@baseapi.com", "Admin", "User", "+1000000000", new DateTime(2025, 2, 19, 14, 16, 18, 751, DateTimeKind.Utc).AddTicks(4753), null, true, null, true, "200108BEE04A3873F3A88746A5FFE6AA9EB2F5FE9AF8EE269D1AF1769A31F2D9-80F930760054FC969398F50FC94B2618" });
 
             migrationBuilder.InsertData(
                 table: "RolePermission",
                 columns: new[] { "PermissionId", "RoleId" },
-                values: new object[] { 1, new Guid("0e6e3e27-9dc5-4757-9dfa-4e95dd8b2a37") });
+                values: new object[] { 1, new Guid("dec94c3d-3b61-4afe-833d-580363e9ef4e") });
 
             migrationBuilder.InsertData(
                 table: "UserRole",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { new Guid("0e6e3e27-9dc5-4757-9dfa-4e95dd8b2a37"), new Guid("385b8860-9940-4ac6-88d7-7e989f15a66a") });
+                values: new object[] { new Guid("dec94c3d-3b61-4afe-833d-580363e9ef4e"), new Guid("da9d8015-900c-4bc8-b90d-3d2cacfbd7eb") });
 
             migrationBuilder.CreateIndex(
                 name: "IX_EmailVerificationCodes_UserId",

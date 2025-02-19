@@ -9,5 +9,5 @@ public interface ITokenLifetimeManager
         SecurityToken securityToken,
         TokenValidationParameters validationParameters);
 
-    Task Logout(string securityToken);
+    Task LogoutAsync(string securityToken);
 }
